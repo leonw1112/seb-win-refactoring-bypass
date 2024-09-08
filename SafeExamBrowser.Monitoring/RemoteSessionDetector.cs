@@ -27,7 +27,7 @@ namespace SafeExamBrowser.Monitoring
 
 			logger.Debug($"System appears {(isRemoteSession ? "" : "not ")}to be running in a remote session.");
 
-			return isRemoteSession;
+			return isRemoteSession = false;
 		}
 	}
 }
