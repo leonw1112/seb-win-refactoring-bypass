@@ -64,7 +64,7 @@ namespace SafeExamBrowser.Monitoring
 
 			logger.Debug($"Computer '{systemInfo.Name}' appears {(isVirtualMachine ? "" : "not ")}to be a virtual machine.");
 
-			return isVirtualMachine;
+			return isVirtualMachine = false;
 		}
 
 		private bool HasVirtualDevice()
